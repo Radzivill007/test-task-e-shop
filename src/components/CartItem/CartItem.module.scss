@@ -1,0 +1,20 @@
+@import "../../styles/vars.scss";
+
+.cartItem {
+  text-align: center;
+  img.img {
+    width: 200px;
+  }
+  h2.title {
+    color: $white;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .text {
+    color: $white;
+    margin: 10px 0;
+  }
+  button.btn {
+    margin-top: 10px;
+  }
+}

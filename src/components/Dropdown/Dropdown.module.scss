@@ -1,0 +1,50 @@
+@import "../../styles/vars.scss";
+
+.dropdown {
+  position: relative;
+  & .header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 16px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: $gray;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    @include xl {
+      height: 42px;
+    }
+    @include lg {
+      height: 36px;
+      font-size: 14px;
+    }
+    & .arrow {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease-in-out;
+    }
+    &.open {
+      & .arrow {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  & .options {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    z-index: 100;
+    background: $gray;
+    width: 100%;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    &.open {
+      max-height: 300px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+$black: #151619;
+$white: rgba(255, 255, 255, 0.87);
+$dark-gray: #22242a;
+$light-gray: #818798;
+$gray: #393c46;
+
+@mixin xs {
+  @media (max-width: 359px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
